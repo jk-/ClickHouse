@@ -2450,9 +2450,10 @@ void ClientBase::runInteractive()
 
     static const std::initializer_list<std::pair<String, String>> backslash_aliases =
         {
-            { "\\l", "SHOW DATABASES" },
-            { "\\d", "SHOW TABLES" },
-            { "\\c", "USE" },
+            { "\\l",  "SHOW DATABASES" },
+            { "\\d",  "SHOW TABLES" },
+            { "\\d+", "DESCRIBE TABLE" },
+            { "\\c",  "USE" },
         };
 
     static const std::initializer_list<String> repeat_last_input_aliases =
